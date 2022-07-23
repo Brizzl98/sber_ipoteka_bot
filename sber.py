@@ -54,7 +54,7 @@ def site(update: Update, context):
 #in case if /command is invalid show message to the user
 def unknown(update: Update, context):
     context.message.reply_text(
-        "Извините, команда '%s' на данный момент не предусмотрена" % update.message.text)
+        "Извините, команда '%s' на данный момент не предусмотрена" % context.message.text)
 
 
 # set model parameters and load the model

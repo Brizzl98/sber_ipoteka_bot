@@ -85,7 +85,7 @@ def load_model(training, output):
 
 def train_model(training, output, net):
     model = tflearn.DNN(net)
-    model.fit(training, output,  n_epoch=150, batch_size=8, show_metric=True)
+    model.fit(training, output,  n_epoch=180, batch_size=8, show_metric=True)
     model.save("model.tflearn")
     return model
 
